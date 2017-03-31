@@ -4,6 +4,8 @@
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
+#
+
 Pod::Spec.new do |s|
 
   s.name         = "ProperMediaView"
@@ -25,7 +27,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "9.0"
 
-  s.source       = { :git => "https://github.com/vazteam/ProperMediaView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/vazteam/ProperMediaView", :tag => "#{s.version}" }
   s.source_files  = "Classes", "Classes/**/*.swift"
 
   # s.resource  = "icon.png"
