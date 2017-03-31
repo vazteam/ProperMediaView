@@ -11,20 +11,20 @@ import UIKit
 import AVFoundation
 
 extension ProperMediaFullScreenView {
-    public static func show(mediaView: ProperMediaView, fromViewController: UIViewController) {
+    public func show(mediaView: ProperMediaView, fromViewController: UIViewController) {
         let mediaFullScreenVc = ProperMediaFullScreenViewController(mediaView: mediaView)
         fromViewController.present(mediaFullScreenVc, animated: false, completion: nil)
     }
 }
 
-class ProperMediaFullScreenViewController: UIViewController {
+public class ProperMediaFullScreenViewController: UIViewController {
     var mediaView: ProperMediaFullScreenView
     
-    override var prefersStatusBarHidden: Bool {
+    override public var prefersStatusBarHidden: Bool {
         return true
     }
     
-    init(mediaView: ProperMediaView) {
+    public init(mediaView: ProperMediaView) {
         self.mediaView = ProperMediaFullScreenView(displacedMediaView: mediaView)
         super.init(nibName: nil, bundle: nil)
         
@@ -32,23 +32,23 @@ class ProperMediaFullScreenViewController: UIViewController {
         modalPresentationStyle = .overFullScreen
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
 // MARK: - override UIViewController method
-    override func loadView() {
+    override public func loadView() {
         self.view = mediaView
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         mediaView.closeButton.addTarget(self, action: #selector(self.closeButtonTouchUppedInside), for: .touchUpInside)
         mediaView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(self.mediaViewPanGestured(gesture:))))
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         mediaView.initOverlayView()
@@ -59,7 +59,7 @@ class ProperMediaFullScreenViewController: UIViewController {
         }
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
+    override public func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
         AVAudioSession.setVolumeWhenMannerMode(isVolume: false)

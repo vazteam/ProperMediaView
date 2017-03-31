@@ -16,7 +16,7 @@ import SDWebImage
     @objc optional func moviePlayViewVolumeChanged(isVolume: Bool)
 }
 
-class ProperMediaView: UIView {
+public class ProperMediaView: UIView {
     @IBOutlet weak var playerView: AVPlayerView!
     @IBOutlet weak var imageView: ProgressImageView!
     @IBOutlet weak var topProgressView: UIProgressView!
@@ -80,7 +80,7 @@ class ProperMediaView: UIView {
         return anim
     }
     
-    init(frame: CGRect, media: ProperMedia, isNeedsDownloadOriginalImage: Bool = false, isFullScreen: Bool = false) {
+    public init(frame: CGRect, media: ProperMedia, isNeedsDownloadOriginalImage: Bool = false, isFullScreen: Bool = false) {
         self.media = media
         self.isFullScreen = isFullScreen
         self.progressColor = UIColor(red:0.92, green:0.26, blue:0.21, alpha:1.00)
@@ -92,7 +92,7 @@ class ProperMediaView: UIView {
         fetchContent(media: media)
     }
     
-    convenience init(frame: CGRect, media: ProperMedia, videoPlayer: AVPlayer) {
+    public convenience init(frame: CGRect, media: ProperMedia, videoPlayer: AVPlayer) {
         self.init(frame: frame, media: media)
         
         self.media = media
@@ -101,7 +101,7 @@ class ProperMediaView: UIView {
         self.playerItem  = videoPlayer.currentItem
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("ProperMediaView can't init from nib")
     }
     
@@ -152,7 +152,7 @@ class ProperMediaView: UIView {
     }
     
 // MARK: - public func
-    func fetchContent(media: ProperMedia) {
+    public func fetchContent(media: ProperMedia) {
         removeVideoItems()
         
         self.media = media
@@ -217,11 +217,11 @@ class ProperMediaView: UIView {
         startDownloadImage()
     }
     
-    func setEnableFullScreen(fromViewController: UIViewController) {
+    public func setEnableFullScreen(fromViewController: UIViewController) {
         self.fromViewController = fromViewController
     }
     
-    func play() {
+    public func play() {
         guard isVideo() else {
             return
         }
@@ -249,7 +249,7 @@ class ProperMediaView: UIView {
         
     }
     
-    func pause() {
+    public func pause() {
         if self.videoPlayer == nil && !isPlaying {
             return
         }
@@ -258,7 +258,7 @@ class ProperMediaView: UIView {
         self.playAndPauseButton.setBackgroundImage(#imageLiteral(resourceName: "btn_movie_play"), for: .normal)
     }
     
-    func playOrPause() {
+    public func playOrPause() {
         if isPlaying {
             self.pause()
         } else {
@@ -266,7 +266,7 @@ class ProperMediaView: UIView {
         }
     }
     
-    func changeVolume(isVolume: Bool) {
+    public func changeVolume(isVolume: Bool) {
         guard self.videoPlayer != nil else {
             return
         }
@@ -310,7 +310,7 @@ class ProperMediaView: UIView {
         return displaceMovieView
     }
     
-    func isVideo() -> Bool {
+    public func isVideo() -> Bool {
         return media.isMovie
     }
     
