@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source       = { :git => "https://github.com/vazteam/ProperMediaView.git", :tag => "v0.0.1" }
   s.source_files = "Classes/**/*.swift"
-  s.resources    = {
-    'ProperMediaView' => ["Resources/*"]
+  s.resource_bundles = {
+    'ProperMediaView' => {'Resources/*'}
   }
   s.dependency "SDWebImage"
 end
