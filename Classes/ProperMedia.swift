@@ -22,13 +22,13 @@ public struct ProperImage: ProperMedia {
     public var mediaUrl: URL
     public var isMovie: Bool
 
-    init(thumbnailUrl: URL, originalImageUrl: URL, placeHolder: UIImage? = nil) {
+    public init(thumbnailUrl: URL, originalImageUrl: URL, placeHolder: UIImage? = nil) {
         self.thumbnailImageUrl = thumbnailUrl
         self.mediaUrl = originalImageUrl
         self.isMovie = false
     }
     
-    init(thumbnailUrlStr: String, originalImageUrlStr: String, placeHolder: UIImage? = nil) {
+    public init(thumbnailUrlStr: String, originalImageUrlStr: String, placeHolder: UIImage? = nil) {
         if let thumbnailUrl = URL(string: thumbnailUrlStr) {
             self.thumbnailImageUrl = thumbnailUrl
         } else {
@@ -53,13 +53,13 @@ public struct ProperMovie: ProperMedia {
     public var mediaUrl: URL
     public var isMovie: Bool
     
-    init(thumbnailUrl: URL, movieUrl: URL, placeHolder: UIImage? = nil) {
+    public init(thumbnailUrl: URL, movieUrl: URL, placeHolder: UIImage? = nil) {
         self.thumbnailImageUrl = thumbnailUrl
         self.mediaUrl = movieUrl
         self.isMovie = true
     }
     
-    init(thumbnailUrlStr: String, movieUrlStr: String, placeHolder: UIImage? = nil) {
+    public init(thumbnailUrlStr: String, movieUrlStr: String, placeHolder: UIImage? = nil) {
         
         if let thumbnailUrl = URL(string: thumbnailUrlStr) {
             self.thumbnailImageUrl = thumbnailUrl
