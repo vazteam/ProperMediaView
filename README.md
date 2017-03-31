@@ -2,6 +2,10 @@
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
+## Installation
+### CocoaPods
+
+
 ## Usage
 ### Image
 ```
@@ -40,4 +44,8 @@ let imageMediaView = ProperMediaView(
 	media: imageMedia,
 	isNeedsDownloadOriginalImage: true)
 ```
+
+## License
+MIT
+
 
