@@ -259,6 +259,7 @@
 				EA903F8A1E8E36A200F79E6F /* Frameworks */,
 				EA903F8B1E8E36A200F79E6F /* Headers */,
 				EA903F8C1E8E36A200F79E6F /* Resources */,
+				EA903FB01E8E43AF00F79E6F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -335,6 +336,20 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		EA5499411E8D12B70024A124 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		EA903FB01E8E43AF00F79E6F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
