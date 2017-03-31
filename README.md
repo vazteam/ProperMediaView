@@ -1,6 +1,6 @@
 # ProperMediaView
 
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0.html)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 ## Usage
 ### Image
