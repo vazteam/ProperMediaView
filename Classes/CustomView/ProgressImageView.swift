@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class ProgressImageView: UIImageView {
-    private var loadingImageView = UIImageView(image: #imageLiteral(resourceName: "loading"))
+    private var loadingImageView = UIImageView(image: UIImage.bundledImage(named: "loading"))
     
     override func layoutSubviews() {
         super.layoutSubviews()

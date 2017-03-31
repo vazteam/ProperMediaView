@@ -38,7 +38,7 @@ class ProperMediaFullScreenView: UIView {
         contentsView.center = displacedView.convert(displacedView.bounds.center, to: self)
         contentsView.clipsToBounds = true
         
-        let closeImage = #imageLiteral(resourceName: "icon_close").withRenderingMode(.alwaysTemplate)
+        let closeImage = UIImage.bundledImage(named: "icon_close")?.withRenderingMode(.alwaysTemplate)
         closeButton.setImage(closeImage, for: .normal)
         
         backgroundColor = UIColor.clear

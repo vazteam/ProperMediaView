@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProperMediaView" customModule="ProperMediaViewDemo" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProperMediaView" customModule="ProperMediaView" customModuleProvider="target">
             <connections>
                 <outlet property="bottomOperateStackView" destination="M9W-Fz-QlM" id="wNW-oc-xfr"/>
                 <outlet property="bottomProgressView" destination="Aeo-mg-gJC" id="xcM-IU-9LF"/>
@@ -34,13 +34,13 @@
             <rect key="frame" x="0.0" y="0.0" width="494" height="535"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ock-mN-xIW" customClass="ProgressImageView" customModule="ProperMediaViewDemo" customModuleProvider="target">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ock-mN-xIW" customClass="ProgressImageView" customModule="ProperMediaView" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="494" height="535"/>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YT-lr-ajT" customClass="AVPlayerView" customModule="ProperMediaViewDemo" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YT-lr-ajT" customClass="AVPlayerView" customModule="ProperMediaView" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="494" height="535"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aeo-mg-gJC" customClass="PFBottomProgressView" customModule="ProperMediaViewDemo" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aeo-mg-gJC" customClass="PFBottomProgressView" customModule="ProperMediaView" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="494" height="535"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcN-MC-krQ">

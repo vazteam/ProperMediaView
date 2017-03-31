@@ -135,7 +135,7 @@ public class ProperMediaView: UIView {
         self.translucentView.alpha = 0
         self.bottomOperateStackView.isUserInteractionEnabled = true
         self.operationAreaView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tappedOperationAreaView(gesture:))))
-        self.seekSlider.setThumbImage(#imageLiteral(resourceName: "icon_sliderThumb").resizeImage(size: CGSize(sideLength: 17)), for: .normal)
+        self.seekSlider.setThumbImage(UIImage.bundledImage(named: "icon_sliderThumb")?.resizeImage(size: CGSize(sideLength: 17)), for: .normal)
         
         self.dissmissMovieEndedOperaters()
         self.dismissMoviePlayingOperaters()
@@ -238,7 +238,7 @@ public class ProperMediaView: UIView {
             self.durationTimeLabel.text = self.stringFromSeconds(seconds: duration)
             
             DispatchQueue.main.async {
-                self.playAndPauseButton.setBackgroundImage(#imageLiteral(resourceName: "btn_movie_pause"), for: .normal)
+                self.playAndPauseButton.setBackgroundImage(UIImage.bundledImage(named: "btn_movie_pause"), for: .normal)
                 self.dismissMoviePlayingOperaters(animation: true)
                 //フルスクリーンなら音声を入れる
                 AVAudioSession.setVolumeWhenMannerMode(isVolume: self.isFullScreen && self.isVideo())
@@ -255,7 +255,7 @@ public class ProperMediaView: UIView {
         }
         videoPlayer.pause()
         isPlaying = false
-        self.playAndPauseButton.setBackgroundImage(#imageLiteral(resourceName: "btn_movie_play"), for: .normal)
+        self.playAndPauseButton.setBackgroundImage(UIImage.bundledImage(named: "btn_movie_play"), for: .normal)
     }
     
     public func playOrPause() {
@@ -272,10 +272,10 @@ public class ProperMediaView: UIView {
         }
         
         if isVolume {
-            self.volumeButton.setImage(#imageLiteral(resourceName: "volume_off"), for: .normal)
+            self.volumeButton.setImage(UIImage.bundledImage(named: "volume_off"), for: .normal)
             self.videoPlayer.volume = 0
         } else {
-            self.volumeButton.setImage(#imageLiteral(resourceName: "volume_on"), for: .normal)
+            self.volumeButton.setImage(UIImage.bundledImage(named: "volume_on"), for: .normal)
             self.videoPlayer.volume = 1.0
         }
         self.delegate?.moviePlayViewVolumeChanged?(isVolume: isVolume)
@@ -331,7 +331,7 @@ public class ProperMediaView: UIView {
                 return
         }
         
-        imageView.sd_setImage(with: media.thumbnailImageUrl, placeholderImage: #imageLiteral(resourceName: "default_image"), options: .allowInvalidSSLCertificates) { (image, error, cacheType, url) in
+        imageView.sd_setImage(with: media.thumbnailImageUrl, placeholderImage: UIImage.bundledImage(named: "default_image"), options: .allowInvalidSSLCertificates) { (image, error, cacheType, url) in
             //サムネイルだけでなく、オリジナルサイズの画像もダウンロードする場合は続行
             if !self.isNeedsDownloadOriginal {
                 return
