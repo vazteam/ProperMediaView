@@ -192,12 +192,12 @@ SWIFT_CLASS("_TtC15ProperMediaView15ProperMediaView")
 
 
 @interface UIImage (SWIFT_EXTENSION(ProperMediaView))
-+ (UIImage * _Nullable)bundledImageWithNamed:(NSString * _Nonnull)named SWIFT_WARN_UNUSED_RESULT;
+- (UIImage * _Nonnull)resizeImageWithSize:(CGSize)size SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 @interface UIImage (SWIFT_EXTENSION(ProperMediaView))
-- (UIImage * _Nonnull)resizeImageWithSize:(CGSize)size SWIFT_WARN_UNUSED_RESULT;
++ (UIImage * _Nullable)bundledImageWithNamed:(NSString * _Nonnull)named SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #pragma clang diagnostic pop

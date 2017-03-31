@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import SDWebImage
+
+import ProperMediaView
 
 class ViewController: UIViewController {
 

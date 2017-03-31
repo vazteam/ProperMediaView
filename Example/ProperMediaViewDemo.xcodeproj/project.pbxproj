@@ -11,19 +11,6 @@
 		EA5499231E8D0E860024A124 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5499221E8D0E860024A124 /* ViewController.swift */; };
 		EA5499261E8D0E860024A124 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5499241E8D0E860024A124 /* Main.storyboard */; };
 		EA54992B1E8D0E860024A124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5499291E8D0E860024A124 /* LaunchScreen.storyboard */; };
-		EA5499401E8D0F2B0024A124 /* ProperMediaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA54993F1E8D0F2B0024A124 /* ProperMediaView.xib */; };
-		EA5499601E8D16A70024A124 /* AVAudioSession+MannerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5499551E8D16A70024A124 /* AVAudioSession+MannerMode.swift */; };
-		EA5499611E8D16A70024A124 /* CGRect+vertexPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5499561E8D16A70024A124 /* CGRect+vertexPoint.swift */; };
-		EA5499621E8D16A70024A124 /* CGSize+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5499571E8D16A70024A124 /* CGSize+init.swift */; };
-		EA5499631E8D16A70024A124 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5499591E8D16A70024A124 /* BlurView.swift */; };
-		EA5499641E8D16A70024A124 /* ProgressImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54995A1E8D16A70024A124 /* ProgressImageView.swift */; };
-		EA5499651E8D16A70024A124 /* ProperMediaFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54995C1E8D16A70024A124 /* ProperMediaFullScreenView.swift */; };
-		EA5499661E8D16A70024A124 /* ProperMediaFullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54995D1E8D16A70024A124 /* ProperMediaFullScreenViewController.swift */; };
-		EA5499671E8D16A70024A124 /* ProperMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54995F1E8D16A70024A124 /* ProperMediaView.swift */; };
-		EA5499691E8D16B70024A124 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5499681E8D16B70024A124 /* AVPlayerView.swift */; };
-		EA54996D1E8D19E00024A124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA54996C1E8D19E00024A124 /* Assets.xcassets */; };
-		EA54996F1E8D1A430024A124 /* ProperMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54996E1E8D1A430024A124 /* ProperMedia.swift */; };
-		EA5499711E8D1CA40024A124 /* UIImage+resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5499701E8D1CA40024A124 /* UIImage+resize.swift */; };
 		EA903F921E8E36A200F79E6F /* ProperMediaView.h in Headers */ = {isa = PBXBuildFile; fileRef = EA903F901E8E36A200F79E6F /* ProperMediaView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA903F9A1E8E36B400F79E6F /* ProperMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54996E1E8D1A430024A124 /* ProperMedia.swift */; };
 		EA903F9B1E8E36BB00F79E6F /* ProperMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54995F1E8D16A70024A124 /* ProperMediaView.swift */; };
@@ -41,9 +28,36 @@
 		EA903FA91E8E38E200F79E6F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5499431E8D13EB0024A124 /* SDWebImage.framework */; };
 		EA903FAA1E8E38E200F79E6F /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA5499431E8D13EB0024A124 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EA903FAC1E8E397E00F79E6F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5499431E8D13EB0024A124 /* SDWebImage.framework */; };
-		EA903FAE1E8E399C00F79E6F /* UIImage+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA903FAD1E8E399C00F79E6F /* UIImage+Bundle.swift */; };
 		EA903FAF1E8E3B7900F79E6F /* UIImage+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA903FAD1E8E399C00F79E6F /* UIImage+Bundle.swift */; };
+		EA903FBA1E8E61C100F79E6F /* ProperMediaView-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EA903FB81E8E61C100F79E6F /* ProperMediaView-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA903FBD1E8E61C100F79E6F /* ProperMediaView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA903FB61E8E61C100F79E6F /* ProperMediaView.framework */; };
+		EA903FBE1E8E61C100F79E6F /* ProperMediaView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA903FB61E8E61C100F79E6F /* ProperMediaView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA903FC21E8E61D100F79E6F /* AVAudioSession+MannerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5499551E8D16A70024A124 /* AVAudioSession+MannerMode.swift */; };
+		EA903FC31E8E61D400F79E6F /* CGRect+vertexPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5499561E8D16A70024A124 /* CGRect+vertexPoint.swift */; };
+		EA903FC41E8E61D700F79E6F /* CGSize+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5499571E8D16A70024A124 /* CGSize+init.swift */; };
+		EA903FC51E8E61DB00F79E6F /* UIImage+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA903FAD1E8E399C00F79E6F /* UIImage+Bundle.swift */; };
+		EA903FC61E8E61DF00F79E6F /* UIImage+resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5499701E8D1CA40024A124 /* UIImage+resize.swift */; };
+		EA903FC71E8E61E400F79E6F /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5499591E8D16A70024A124 /* BlurView.swift */; };
+		EA903FC81E8E61E700F79E6F /* ProgressImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54995A1E8D16A70024A124 /* ProgressImageView.swift */; };
+		EA903FC91E8E61EB00F79E6F /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5499681E8D16B70024A124 /* AVPlayerView.swift */; };
+		EA903FCA1E8E61EF00F79E6F /* ProperMediaFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54995C1E8D16A70024A124 /* ProperMediaFullScreenView.swift */; };
+		EA903FCB1E8E61F200F79E6F /* ProperMediaFullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54995D1E8D16A70024A124 /* ProperMediaFullScreenViewController.swift */; };
+		EA903FCC1E8E61F600F79E6F /* ProperMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54995F1E8D16A70024A124 /* ProperMediaView.swift */; };
+		EA903FCD1E8E61FA00F79E6F /* ProperMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54996E1E8D1A430024A124 /* ProperMedia.swift */; };
+		EA903FD01E8E628A00F79E6F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5499431E8D13EB0024A124 /* SDWebImage.framework */; };
+		EA903FD11E8E634300F79E6F /* ProperMediaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA54993F1E8D0F2B0024A124 /* ProperMediaView.xib */; };
+		EA903FD21E8E634700F79E6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA54996C1E8D19E00024A124 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA903FBB1E8E61C100F79E6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA5499151E8D0E860024A124 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA903FB51E8E61C100F79E6F;
+			remoteInfo = "ProperMediaView-iOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		EA903FAB1E8E38E200F79E6F /* Embed Frameworks */ = {
@@ -52,6 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				EA903FBE1E8E61C100F79E6F /* ProperMediaView.framework in Embed Frameworks */,
 				EA903FAA1E8E38E200F79E6F /* SDWebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -84,6 +99,9 @@
 		EA903F901E8E36A200F79E6F /* ProperMediaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProperMediaView.h; sourceTree = "<group>"; };
 		EA903F911E8E36A200F79E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA903FAD1E8E399C00F79E6F /* UIImage+Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Bundle.swift"; sourceTree = "<group>"; };
+		EA903FB61E8E61C100F79E6F /* ProperMediaView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProperMediaView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA903FB81E8E61C100F79E6F /* ProperMediaView-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProperMediaView-iOS.h"; sourceTree = "<group>"; };
+		EA903FB91E8E61C100F79E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA903FBD1E8E61C100F79E6F /* ProperMediaView.framework in Frameworks */,
 				EA903FA91E8E38E200F79E6F /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +122,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA903FB21E8E61C100F79E6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA903FD01E8E628A00F79E6F /* SDWebImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,6 +138,7 @@
 			children = (
 				EA54991F1E8D0E860024A124 /* ProperMediaViewDemo */,
 				EA903F8F1E8E36A200F79E6F /* ProperMediaView */,
+				EA903FB71E8E61C100F79E6F /* ProperMediaView-iOS */,
 				EA54991E1E8D0E860024A124 /* Products */,
 				EA5499421E8D13EB0024A124 /* Frameworks */,
 			);
@@ -121,6 +149,7 @@
 			children = (
 				EA54991D1E8D0E860024A124 /* ProperMediaViewDemo.app */,
 				EA903F8E1E8E36A200F79E6F /* ProperMediaView.framework */,
+				EA903FB61E8E61C100F79E6F /* ProperMediaView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,6 +247,15 @@
 			path = ProperMediaView;
 			sourceTree = "<group>";
 		};
+		EA903FB71E8E61C100F79E6F /* ProperMediaView-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EA903FB81E8E61C100F79E6F /* ProperMediaView-iOS.h */,
+				EA903FB91E8E61C100F79E6F /* Info.plist */,
+			);
+			path = "ProperMediaView-iOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -226,6 +264,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA903F921E8E36A200F79E6F /* ProperMediaView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA903FB31E8E61C100F79E6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA903FBA1E8E61C100F79E6F /* ProperMediaView-iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +291,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EA903FBC1E8E61C100F79E6F /* PBXTargetDependency */,
 			);
 			name = ProperMediaViewDemo;
 			productName = ProperMediaViewDemo;
@@ -270,6 +317,25 @@
 			productReference = EA903F8E1E8E36A200F79E6F /* ProperMediaView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		EA903FB51E8E61C100F79E6F /* ProperMediaView-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA903FBF1E8E61C100F79E6F /* Build configuration list for PBXNativeTarget "ProperMediaView-iOS" */;
+			buildPhases = (
+				EA903FB11E8E61C100F79E6F /* Sources */,
+				EA903FB21E8E61C100F79E6F /* Frameworks */,
+				EA903FB31E8E61C100F79E6F /* Headers */,
+				EA903FB41E8E61C100F79E6F /* Resources */,
+				EA903FCF1E8E622C00F79E6F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ProperMediaView-iOS";
+			productName = "ProperMediaView-iOS";
+			productReference = EA903FB61E8E61C100F79E6F /* ProperMediaView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -286,6 +352,11 @@
 						ProvisioningStyle = Automatic;
 					};
 					EA903F8D1E8E36A200F79E6F = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 58347496P5;
+						ProvisioningStyle = Automatic;
+					};
+					EA903FB51E8E61C100F79E6F = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 58347496P5;
 						ProvisioningStyle = Automatic;
@@ -307,6 +378,7 @@
 			targets = (
 				EA54991C1E8D0E860024A124 /* ProperMediaViewDemo */,
 				EA903F8D1E8E36A200F79E6F /* ProperMediaView */,
+				EA903FB51E8E61C100F79E6F /* ProperMediaView-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -318,8 +390,6 @@
 			files = (
 				EA54992B1E8D0E860024A124 /* LaunchScreen.storyboard in Resources */,
 				EA5499261E8D0E860024A124 /* Main.storyboard in Resources */,
-				EA5499401E8D0F2B0024A124 /* ProperMediaView.xib in Resources */,
-				EA54996D1E8D19E00024A124 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +399,15 @@
 			files = (
 				EA903FA51E8E36DE00F79E6F /* Assets.xcassets in Resources */,
 				EA903FA61E8E36E900F79E6F /* ProperMediaView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA903FB41E8E61C100F79E6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA903FD21E8E634700F79E6F /* Assets.xcassets in Resources */,
+				EA903FD11E8E634300F79E6F /* ProperMediaView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +442,20 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		EA903FCF1E8E622C00F79E6F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -370,20 +463,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5499691E8D16B70024A124 /* AVPlayerView.swift in Sources */,
-				EA5499651E8D16A70024A124 /* ProperMediaFullScreenView.swift in Sources */,
 				EA5499231E8D0E860024A124 /* ViewController.swift in Sources */,
-				EA5499601E8D16A70024A124 /* AVAudioSession+MannerMode.swift in Sources */,
-				EA5499661E8D16A70024A124 /* ProperMediaFullScreenViewController.swift in Sources */,
-				EA5499621E8D16A70024A124 /* CGSize+init.swift in Sources */,
-				EA5499641E8D16A70024A124 /* ProgressImageView.swift in Sources */,
-				EA5499611E8D16A70024A124 /* CGRect+vertexPoint.swift in Sources */,
 				EA5499211E8D0E860024A124 /* AppDelegate.swift in Sources */,
-				EA5499711E8D1CA40024A124 /* UIImage+resize.swift in Sources */,
-				EA54996F1E8D1A430024A124 /* ProperMedia.swift in Sources */,
-				EA5499631E8D16A70024A124 /* BlurView.swift in Sources */,
-				EA5499671E8D16A70024A124 /* ProperMediaView.swift in Sources */,
-				EA903FAE1E8E399C00F79E6F /* UIImage+Bundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,7 +487,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA903FB11E8E61C100F79E6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA903FCC1E8E61F600F79E6F /* ProperMediaView.swift in Sources */,
+				EA903FCB1E8E61F200F79E6F /* ProperMediaFullScreenViewController.swift in Sources */,
+				EA903FC31E8E61D400F79E6F /* CGRect+vertexPoint.swift in Sources */,
+				EA903FC51E8E61DB00F79E6F /* UIImage+Bundle.swift in Sources */,
+				EA903FCD1E8E61FA00F79E6F /* ProperMedia.swift in Sources */,
+				EA903FC41E8E61D700F79E6F /* CGSize+init.swift in Sources */,
+				EA903FC81E8E61E700F79E6F /* ProgressImageView.swift in Sources */,
+				EA903FC91E8E61EB00F79E6F /* AVPlayerView.swift in Sources */,
+				EA903FC21E8E61D100F79E6F /* AVAudioSession+MannerMode.swift in Sources */,
+				EA903FC61E8E61DF00F79E6F /* UIImage+resize.swift in Sources */,
+				EA903FCA1E8E61EF00F79E6F /* ProperMediaFullScreenView.swift in Sources */,
+				EA903FC71E8E61E400F79E6F /* BlurView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA903FBC1E8E61C100F79E6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA903FB51E8E61C100F79E6F /* ProperMediaView-iOS */;
+			targetProxy = EA903FBB1E8E61C100F79E6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EA5499241E8D0E860024A124 /* Main.storyboard */ = {
@@ -524,6 +632,7 @@
 		EA5499301E8D0E860024A124 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 58347496P5;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -531,6 +640,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ProperMediaViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = m.m.ProperMediaViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -541,6 +651,7 @@
 		EA5499311E8D0E860024A124 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 58347496P5;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -548,6 +659,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ProperMediaViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = m.m.ProperMediaViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -613,6 +725,62 @@
 			};
 			name = Release;
 		};
+		EA903FC01E8E61C100F79E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 58347496P5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "ProperMediaView-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "m.m.ProperMediaView-iOS";
+				PRODUCT_NAME = ProperMediaView;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EA903FC11E8E61C100F79E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 58347496P5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "ProperMediaView-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "m.m.ProperMediaView-iOS";
+				PRODUCT_NAME = ProperMediaView;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -639,6 +807,14 @@
 			buildConfigurations = (
 				EA903F971E8E36A200F79E6F /* Debug */,
 				EA903F981E8E36A200F79E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA903FBF1E8E61C100F79E6F /* Build configuration list for PBXNativeTarget "ProperMediaView-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA903FC01E8E61C100F79E6F /* Debug */,
+				EA903FC11E8E61C100F79E6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
