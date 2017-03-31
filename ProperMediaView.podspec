@@ -19,14 +19,14 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/vazteam/ProperMediaView"
 
-  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.license      = {:type => "MIT", :file => "LICENSE" }
 
   s.author             = { "murawaki-村脇" => "mitsuhiromurawaki@gmail.com" }
 
   s.platform     = :ios, "9.0"
 
   s.source       = { :git => "https://github.com/vazteam/ProperMediaView.git", :tag => "#{s.version}" }
-  s.source_files  = "Classes", "Classes/**/*.swift"
+  s.source_files  = "Classes/**/*.swift"
 
   # s.resource  = "icon.png"
   s.resources = "Resources/*"
