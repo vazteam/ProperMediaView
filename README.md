@@ -3,8 +3,18 @@
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 ## Installation
-### CocoaPods
+### Carthage
+**Cartfile** (dependency SDWebImage)
+```
+github "rs/SDWebImage"
+github "vazteam/ProperMediaView"
+```
 
+### CocoaPods
+**Podfile**
+```
+pod 'ProperMediaView', :git => 'https://github.com/vazteam/ProperMediaView.git'
+```
 
 ## Usage
 ### Image
