@@ -20,10 +20,12 @@ public extension UIImage {
             return image
         }
         
-        let path = Bundle.main.path(forResource: "ProperMediaView", ofType: "bundle")!
-        let bundleWithPath = Bundle(path: path)
-        let image = UIImage(named: named, in: bundleWithPath, compatibleWith: nil)
+        let frameworkBundle = Bundle(for: ProperMediaView.self)
+        let bundleUrl = frameworkBundle.resourceURL?.appendingPathComponent("ProperMediaView.bundle")
+        let resourceBundle = Bundle(url: bundleUrl!)
+        let image = UIImage(named: named, in: resourceBundle, compatibleWith: nil)
         
         return image
     }
 }
+
