@@ -1,0 +1,10 @@
+framework module ProperMediaView {
+  umbrella header "ProperMediaView.h"
+
+  export *
+  module * { export * }
+}
+
+module ProperMediaView.Swift {
+    header "ProperMediaView-Swift.h"
+}
