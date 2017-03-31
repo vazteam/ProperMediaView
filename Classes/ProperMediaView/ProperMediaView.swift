@@ -479,7 +479,7 @@ public class ProperMediaView: UIView {
     }
     
    // MARK: - Observer & Notification
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         if keyPath == "status" {
             let status: AVPlayerItemStatus? = self.playerItem?.status
@@ -642,7 +642,7 @@ public class ProperMediaView: UIView {
     func tappedOperationAreaView(gesture: UITapGestureRecognizer) {
         if !isFullScreen {
             if let vc: UIViewController = fromViewController {
-                ProperMediaFullScreenView.show(mediaView: self, fromViewController: vc)
+                ProperMediaFullScreenViewController.show(mediaView: self, fromViewController: vc)
             }
         }
         

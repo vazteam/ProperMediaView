@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 import AVFoundation
 
-extension ProperMediaFullScreenView {
-    public func show(mediaView: ProperMediaView, fromViewController: UIViewController) {
+public extension ProperMediaFullScreenViewController {
+    public static func show(mediaView: ProperMediaView, fromViewController: UIViewController) {
         let mediaFullScreenVc = ProperMediaFullScreenViewController(mediaView: mediaView)
         fromViewController.present(mediaFullScreenVc, animated: false, completion: nil)
     }
