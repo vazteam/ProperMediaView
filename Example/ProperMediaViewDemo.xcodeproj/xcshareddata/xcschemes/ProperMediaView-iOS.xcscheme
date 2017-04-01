@@ -15,8 +15,22 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EA903FB51E8E61C100F79E6F"
-               BuildableName = "ProperMediaView-iOS.framework"
-               BlueprintName = "ProperMediaView-iOS"
+               BuildableName = "ProperMediaView.framework"
+               BlueprintName = "ProperMediaView iOS"
+               ReferencedContainer = "container:ProperMediaViewDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EA903F8D1E8E36A200F79E6F"
+               BuildableName = "ProperMediaView.framework"
+               BlueprintName = "ProperMediaView"
                ReferencedContainer = "container:ProperMediaViewDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,6 +43,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "EA903FB51E8E61C100F79E6F"
+            BuildableName = "ProperMediaView.framework"
+            BlueprintName = "ProperMediaView iOS"
+            ReferencedContainer = "container:ProperMediaViewDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -46,8 +69,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EA903FB51E8E61C100F79E6F"
-            BuildableName = "ProperMediaView-iOS.framework"
-            BlueprintName = "ProperMediaView-iOS"
+            BuildableName = "ProperMediaView.framework"
+            BlueprintName = "ProperMediaView iOS"
             ReferencedContainer = "container:ProperMediaViewDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,7 +79,7 @@
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
-      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldUseLaunchSchemeArgsEnv = "NO"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
@@ -64,8 +87,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EA903FB51E8E61C100F79E6F"
-            BuildableName = "ProperMediaView-iOS.framework"
-            BlueprintName = "ProperMediaView-iOS"
+            BuildableName = "ProperMediaView.framework"
+            BlueprintName = "ProperMediaView iOS"
             ReferencedContainer = "container:ProperMediaViewDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
